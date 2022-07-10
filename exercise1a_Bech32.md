@@ -35,6 +35,9 @@ excluding the first two digits (00), copy the part which is uncommon from the ab
 
 add the prefix of 60 - 6 for enterprise address and 0 for testnet
 bech32 addr <<< 608d755da55a1bc68c43175e40b09d6d102fb97626aa0a036c3a4c760f
+
+### Resultant Enterprise Address:
+
 addr1vzxh2hd9tgdudrzrza0ypvyad5gzlwtky64q5qmv8fx8vrc9c4kld
 
 Now this is an enterprise address created without a staking component which belongs to the wallet but any amount in this address is not staked at all.
