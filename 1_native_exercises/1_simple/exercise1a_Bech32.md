@@ -53,6 +53,7 @@ bech32 addr_test <<< 608d755da55a1bc68c43175e40b09d6d102fb97626aa0a036c3a4c760f
 
 The output of the bech32 command above will be as below:
 ```
-addr1vzxh2hd9tgdudrzrza0ypvyad5gzlwtky64q5qmv8fx8vrc9c4kld
+addr_test1vzxh2hd9tgdudrzrza0ypvyad5gzlwtky64q5qmv8fx8vrc7z3ms0
+
 ```
 Now this is an enterprise address created without a staking component which belongs to the wallet but any amount in this address is not staked at all.
