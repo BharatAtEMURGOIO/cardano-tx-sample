@@ -64,7 +64,7 @@ export PKG_CONFIG_PATH="/usr/local/lib/pkgconfig:$PKG_CONFIG_PATH"
 
 
 ## To start the cardano-node in preview network , type the command below and hit ENTER
-```
+```bash
 previewnode
 ```
 
@@ -75,23 +75,22 @@ Keep clicking "Allow Anyway" in the security prompt in settings for all files wh
  Alternatively you can use the below commands to temporarily disable the gatekeeper security. 
 WARNING:  disables the system policies entirely! Perform at your own risk! 
 To enable to allow apps from anywhere to be installed use the following command in terminal ::
-```
+```bash
 sudo spctl --master-disable
 ```
 To re-enable system policies, use the following command
-```
+```bash
 sudo spctl --master-enable
-
 ```
+
 you can always type 
 ```
 spctl --status
-```if it's still enabled you'll get assessments enabled in response.
+```
+if it's still enabled you'll get assessments enabled in response.
 
 
 ## How to deal with common errors.
-
-
 ### if after an improper shut-down, you get the below error
 
 ```
@@ -100,16 +99,15 @@ cardano-node: The db is used by another process. File "/home/bharat/testnet/db/p
 
 then either restart the system or kill the cardano-node process (not recommended!)
 
-```
+```bash
 sudo killall cardano-node
 ```
 
 ### After this kind of an improper shutdown, you might need to delete all the files in the /testnet/db/preview or /testnet/db/preprod folder and resync the database 
 
-For preview network (
 ### NOTE: use the rm -rf command with care as if it is run in the wrong directory, it can delete important files
 ### Ensure that you only run it within the testnet/db/.. folder
-```
+```bash
 cd $TESTNET/db/preview
 rm -rf ./* 
 rm -rf ./.*
